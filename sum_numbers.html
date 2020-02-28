@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum of Numbers</title>
+    <script>
+        var a = '';
+        do {
+            var grade = '';
+
+            do {
+                var n = prompt("Entry any top number to sum \nfrom 1 to 100");
+                number = parseInt(n);
+            } while (number < 1 || number > 100) 
+
+            var counter = 0;
+            for (var i = 0; i <= number; i++) {
+                counter = counter + i;
+            }
+
+            alert("The sum of the numbers from 1 through " + number + " is " + counter);
+
+            var p = prompt("Do another sum?");
+            a = p
+        }
+        while (a == 'y')
+    </script>
+</head>
+<body>
+    <main>
+        <!-- Will show after JavaScript has run -->
+        <h1>Thanks for using the Sum of Numbers application!</h1>
+    </main>
+</body>
+</html>
