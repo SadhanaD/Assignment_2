@@ -12,7 +12,11 @@
             if (fah > -100 && fah < 212) {
                 var cel = (fah - 32) * (5 / 9);
                 alert("Fahrenheit temprature is " + fah + "\nCelsius temprature is " + cel);
-            } else {
+            }
+            else if (fah == 999) {
+                break;
+            }
+            else {
                 alert("You entered " + fah + "\nEntry must range from -100 and 212");
             }
         }

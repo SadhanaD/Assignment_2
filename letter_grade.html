@@ -8,11 +8,13 @@
         do {
             var grade = '';
             var m = prompt("Enter number grade from 0 through 100 \nOr enter 999 to end entries");
-            marks = parseInt(m);
+            if(m != '') marks = parseInt(m);
+
+            if (marks == 999) break;
 
             if (marks >= 88 && marks <= 100) {
                 grade = 'A';
-            } else if (marks >= 80 && grade <= 87) {
+            } else if (marks <= 87 && grade >= 80) {
                 grade = 'B';
             } else if (marks >= 68 && grade <= 79) {
                 grade = 'C';
